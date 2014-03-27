@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="nm-np">
+<head>
+    <meta charset="utf-8"/>
+    <title>{+title /}</title>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body class="nm-np">
+<header class="grey">
+    <div class="wrapper">
+        <h1>Kraken Central</h1>
+        <nav>
+            <ul class="nm-np inline">
+                <li><a href="/">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/admin">Admin</a></li>
+                <li>
+                    {#user}
+                         <a href="/logout">Logout</a>
+                    {:else}
+                         <a href="/login">Login</a>
+                    {/user}
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="wrapper">
+    {+body /}
+</div>
+<div id="tentacle"></div>
+</body>
+</html>

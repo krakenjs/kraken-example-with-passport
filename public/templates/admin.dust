@@ -1,0 +1,7 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>{@pre type="content" key="greeting"/}</h1>
+    <p>Welcome to the Administrators private club. No users allowed here.</p>
+
+{/body}
