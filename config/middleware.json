@@ -11,6 +11,11 @@
             "factoryMethod": "flash",
             "enabled": true
         },
+        "locale": {
+            "module": "path:./lib/locale",
+            "priority": 95,
+            "enabled": true
+        },
         //test if user session required to view page and if user has permission for given page
         "isAuthenticated": {
             "enabled": true,
