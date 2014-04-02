@@ -15,7 +15,6 @@
             }
         }
     },
-
     "i18n": {
         "contentPath": "path:./locales",
         "fallback": "en-US"
