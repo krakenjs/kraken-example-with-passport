@@ -9,23 +9,23 @@ var IndexModel = require('../models/index'),
 
 module.exports = function (router) {
 
-    var model = new IndexModel();
-    var model = new ProfileModel();
-    var model = new AdminModel();
+    var indexmodel = new IndexModel();
+    var profilemodel = new ProfileModel();
+    var adminmodel = new AdminModel();
 
 
     router.get('/', function (req, res) {
-        res.render('index', model);
+        res.render('index', indexmodel);
     });
 
 
     router.get('/profile', function(req, res) {
-        res.render('profile', model);
+        res.render('profile', profilemodel);
     });
 
 
     router.get('/admin', auth.isAuthenticated('admin'), auth.injectUser(), function(req, res) {
-        res.render('admin', model);
+        res.render('admin', adminmodel);
     });
 
     /**
