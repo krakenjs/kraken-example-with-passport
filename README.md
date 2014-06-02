@@ -13,8 +13,8 @@ This example highlights the following things:
 * Using bcrypt to securely hash and salt user passwords before storing them in a database.
 * Storing credentials in a Mongo database.
 * Limiting access to certain parts of your application based on user roles.
-* modifying elements of the user interface based on logged in/logged out user status.
-* registering Kraken middleware via the JSON configuration files
+* Modifying elements of the user interface based on logged in/logged out user status.
+* Registering Kraken middleware via the JSON configuration files
 
 
 ## Prerequisites
