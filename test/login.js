@@ -18,7 +18,7 @@ describe('/login', function () {
         app = express();
         app.on('start', done);
         app.use(kraken({
-            basedir: '.',
+            basedir: process.cwd(),
             onconfig: spec(app).onconfig
         }));
 
@@ -32,12 +32,12 @@ describe('/login', function () {
     });
 
 
-    it('should say "hello"', function (done) {
+    it('should say "Login"', function (done) {
         request(mock)
             .get('/login')
             .expect(200)
             .expect('Content-Type', /html/)
-            .expect(/Hello, /)
+            .expect(/Login/)
             .end(function (err, res) {
                 done(err);
             });
