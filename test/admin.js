@@ -18,12 +18,11 @@ describe('/admin', function () {
         app = express();
         app.on('start', done);
         app.use(kraken({
-            basedir: '.',
+            basedir: process.cwd(),
             onconfig: spec(app).onconfig
         }));
 
         mock = app.listen(1337);
-
     });
 
 
@@ -32,12 +31,10 @@ describe('/admin', function () {
     });
 
 
-    it('should say "hello"', function (done) {
+    it('should get redirected to login', function (done) {
         request(mock)
             .get('/admin')
-            .expect(200)
-            .expect('Content-Type', /html/)
-            .expect(/Hello, /)
+            .expect(302)
             .end(function (err, res) {
                 done(err);
             });

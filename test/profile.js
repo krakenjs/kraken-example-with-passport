@@ -18,7 +18,7 @@ describe('/profile', function () {
         app = express();
         app.on('start', done);
         app.use(kraken({
-            basedir: '.',
+            basedir: process.cwd(),
             onconfig: spec(app).onconfig
         }));
 
@@ -32,12 +32,10 @@ describe('/profile', function () {
     });
 
 
-    it('should say "hello"', function (done) {
+    it('should redirect to Login', function (done) {
         request(mock)
             .get('/profile')
-            .expect(200)
-            .expect('Content-Type', /html/)
-            .expect(/Hello, /)
+            .expect(302)
             .end(function (err, res) {
                 done(err);
             });

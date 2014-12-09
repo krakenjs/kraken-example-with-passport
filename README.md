@@ -44,6 +44,10 @@ There are two users added to the user schema: "ash" with the password "ash" and 
 
 Try logging in with each user and clicking around on the links again. Note that Ash can view the Profile page, but not the Admin page. Kraken can view all pages. Also note that when a user is logged in, the Login link changes to a Logout link.
 
+## Running the unit tests
+
+* Local mongod process must be running
+* Run `grunt test` from the base directory of the application
 
 ## TODO
 * Document breaking down the changes
