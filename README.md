@@ -19,13 +19,17 @@ This example highlights the following things:
 ## Prerequisites
 * This example requires that [MongoDB](http://www.mongodb.org/downloads) be installed and be running on its default port.
 * You will -- of course -- need [Node](http://nodejs.org) (Version >= 0.10.22 preferred)
+* For Windows machines, Visual Studio is required to compile some of the dependencies. The free Visual Studio Express version is sufficient. https://www.visualstudio.com/products/visual-studio-express-vs
 
 ## Installation
-This example is a part of the kraken-examples repository. Clone, install and run.
+Clone, install and run
 
 ```shell
-$ git clone git@github.com:krakenjs/kraken-examples.git
-$ cd kraken-examples/with.passport
+# For ssh authentication:
+$ git clone git@github.com:krakenjs/kraken-example-with-passport.git
+# For https authentication:
+$ git clone https://github.com/krakenjs/kraken-example-with-passport.git
+$ cd kraken-example-with-passport
 $ npm install
 $ npm start
 ```
