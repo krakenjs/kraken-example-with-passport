@@ -22,16 +22,13 @@ This example highlights the following things:
 * For Windows machines, Visual Studio is required to compile some of the dependencies. The free Visual Studio Express version is sufficient. https://www.visualstudio.com/products/visual-studio-express-vs
 
 ## Installation
-Clone, install and run
+Clone, install and run.
 
 ```shell
-# For ssh authentication:
-$ git clone git@github.com:krakenjs/kraken-example-with-passport.git
-# For https authentication:
-$ git clone https://github.com/krakenjs/kraken-example-with-passport.git
-$ cd kraken-example-with-passport
-$ npm install
-$ npm start
+git clone https://github.com/krakenjs/kraken-example-with-passport.git
+cd kraken-example-with-passport
+npm install
+npm start
 ```
 
 ## Explore the app
