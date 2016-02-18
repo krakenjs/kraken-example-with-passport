@@ -31,6 +31,18 @@ npm install
 npm start
 ```
 
+Optionally, to enable sending an email to verify user email addresses, create an `.env` text file in the project root that looks like the following:
+````
+hotmail_email=yourhotmailemail@hotmail.com
+hotmail_password=yourhotmailpassword
+````
+If planning to send emails, also update your hosts file to include the following line:
+````
+127.0.01  example.kraken-passport.com
+````
+.. and visit [`http://example.kraken-passport.com:8000/`](http://example.kraken-passport.com:8000/) instead of localhost. (Otherwise, email clients will strip the verify email link.)
+
+
 ## Explore the app
 
 Visit [`http://localhost:8000`](http://localhost:8000)

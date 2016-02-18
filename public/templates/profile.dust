@@ -3,11 +3,9 @@
 {<body}
     <h1>{@pre type="content" key="greeting"/}</h1>
     <p>
-        You are <strong>{user.firstName}</strong>
-        and
+        You are <strong>{user.firstName}</strong> and
         {@eq key="user.roles.length" value="1"}
-            your role is
-            {user.roles[0]}
+            your role is {user.roles[0]}
         {:else}
             {?user.roles}
                 your roles are
