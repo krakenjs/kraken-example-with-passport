@@ -1,0 +1,7 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>Email Verified!</h1>
+    <p>Your email address was successfully verified.</p>
+
+{/body}

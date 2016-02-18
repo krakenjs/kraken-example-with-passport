@@ -1,0 +1,8 @@
+{>"layouts/master" /}
+
+{<body}
+    <h1>Oops!</h1>
+    <p>There was a problem verifying your email address.  Email verification tokens expire after four hours.</p>
+    {! todo: link (and route, and controller...) to re-send email verification !}
+
+{/body}
