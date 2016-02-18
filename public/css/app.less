@@ -16,7 +16,8 @@ ul.inline li {
 body {
   background-color: #263C81;
   color: #F2F2F2;
-  font-family: "helvetica neue", "arial", "sans";
+  font-size: 16px;
+  font-family: "helvetica neue", arial, sans-serif;
 }
 
 header {
@@ -29,7 +30,6 @@ header h1 {
   margin: 0;
   padding: .25em 0;
   font-size: 1.75em
-
 }
 
 nav li {
@@ -95,7 +95,6 @@ a:hover {
   .rounded(5px);
   background-color: #ccc;
   display: inline-block;
-
 }
 
 .ccForm h3 {
@@ -108,7 +107,6 @@ a:hover {
 .ccForm fieldset {
   padding: 1em;
   border: none;
-
 }
 
 :-moz-placeholder {
@@ -126,4 +124,43 @@ a:hover {
 
 :-ms-input-placeholder {
   color: #cccccc;
+}
+
+
+/* forms */
+.login-form,
+.register-form {
+  width: 50%;
+  max-width: 600px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-size: 16px;
+  width: 100%;
+  padding: .6em .8em;
+  border-radius: .5em;
+  box-sizing: border-box;
+}
+button {
+  font-size: 16px;
+  padding: .6em .8em;
+  border-radius: .5em;
+  min-width: 40%;
+  float: right;
+}
+.form-row {
+  display: table;
+  width: 100%;
+  padding: .5em 0;
+}
+.form-row .half {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding-right: 2%;
+}
+.form-row .half + .half {
+  padding: 0 0 0 2%;
 }

@@ -68,5 +68,5 @@
     "maxstatements": 25,
     "maxcomplexity": 6,
 
-    "predef": ["define", "requirejs"]
+    "predef": ["define"]
 }

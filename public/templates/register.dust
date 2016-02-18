@@ -1,0 +1,37 @@
+{>"layouts/master" /}
+
+{<body}
+    <form class="register-form" method="post">
+        <h1>Sign Up</h1>
+        <p>Already have an account? &nbsp; <a href="/login">Log in</a></p>
+        {?messages}
+            <ul>
+                {#messages}
+                    <li>{.}</li>
+                {/messages}
+            </ul>
+        {/messages}
+        <p><small>All fields are required.</small></p>
+        <div class="form-row">
+            <div class="input half">
+                <input placeholder="First name" name="firstName" type="text" value="{user.firstName}" maxlength="50" required />
+            </div>
+            <div class="input half">
+                <input placeholder="Last name" name="lastName" type="text" value="{user.lastName}" maxlength="50" required />
+            </div>
+        </div>
+        <div class="form-row">
+            <input placeholder="Email address" name="email" type="email" value="{user.email}" required />
+        </div>
+        <div class="form-row">
+            <input placeholder="Confirm email address" name="confirmEmail" type="email" value="{user.confirmEmail}" required />
+        </div>
+        <div class="form-row">
+            <input placeholder="Password" name="password" type="password" required />
+        </div>
+        <div class="form-row">
+            <input type="hidden" name="_csrf" value="{_csrf}"/>
+            <button>Register</button>
+        </div>
+    </form>
+{/body}

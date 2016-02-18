@@ -1,13 +1,13 @@
 'use strict';
 
 
-var LoginModel = require('../../models/login'),
- passport = require('passport');
+var PageModel = require('../../models/pages/login'),
+    passport = require('passport');
 
 
 module.exports = function (router) {
 
-    var model = new LoginModel();
+    var model = {page: new PageModel()};
 
 
     /**
@@ -36,7 +36,6 @@ module.exports = function (router) {
         })(req, res);
 
     });
-
 
 
 };

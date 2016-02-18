@@ -1,0 +1,10 @@
+{>"layouts/master" /}
+
+{<body}
+
+    <h1>Success!</h1>
+    <p>Welcome {user.firstName}!  You have successfully registered.</p>
+    <p>Check your email inbox for an email from us for you to verify your email address.</p>
+    <p>Thanks, and welcome aboard!</p>
+
+{/body}
