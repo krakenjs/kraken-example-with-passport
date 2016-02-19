@@ -2,7 +2,7 @@
 
 // get mailer config from environment
 // (don't put secret things, like email API Key, directly in your code)
-require('dotenv').config();
+require('dotenv').config({silent: true});
 
 // now for everything else.
 
